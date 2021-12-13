@@ -57,4 +57,27 @@ const products = [
   },
 ];
 
-
+document.getElementById("product").innerHTML= products.map(element=>
+  `<div class="container card m-8 justify-content-center" style= "width:100%">
+  <div class="row align-items-start">
+    <div class="col mt-3">
+      <img src="${element.image}" class="img-fluid rounded-start" alt="">
+    </div>
+    <div class="col pe-3">
+      <div class="card-body ">
+        <h5 class="card-title">${element.name}</h5>
+        <p class="card-text">${element.description}</p>
+      </div>
+    </div>
+    <div class="col mt-3">
+      <h3 class="ms-3">${element.price}SAR</h3>
+      <p class="text-success ms-3">${element.status}</p>
+      <form>
+        <button type="button" class="btn btn-secondary m-3 ps-5 pe-5 bg-purple">Details</button>
+        <br>
+        <button type="button" class="btn btn-secondary ms-3 ps-5 pe-5 bg-pink">Delete</button>
+      </form>
+    </div>
+  </div>
+  </div>`
+  );
