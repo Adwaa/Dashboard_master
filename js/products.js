@@ -58,7 +58,7 @@ const products = [
 ];
 
 document.getElementById("product").innerHTML= products.map(element=>
-  `<div class="container card m-8 justify-content-center" style= "width:100%">
+ /* `<div class="container card m-3 justify-content-center" style= "width:100%">
   <div class="row align-items-start">
     <div class="col mt-3">
       <img src="${element.image}" class="img-fluid rounded-start" alt="">
@@ -74,8 +74,31 @@ document.getElementById("product").innerHTML= products.map(element=>
       <p class="text-success ms-3">${element.status}</p>
       <form>
         <button type="button" class="btn btn-secondary m-3 ps-5 pe-5 bg-purple">Details</button>
-        <br>
         <button type="button" class="btn btn-secondary ms-3 ps-5 pe-5 bg-pink">Delete</button>
+      </form>
+    </div>
+  </div>
+  </div>`*/
+
+
+
+  `<div class="container card mb-3  w-75 m-auto d-flex flex-row align-items-center">
+  <div class="row">
+    <div class="col-lg-4">
+      <img src="${element.image}" class="img-fluid h-100 w-100 rounded-start" alt="">
+    </div>
+    <div class="col-lg-5" style="padding:17px;">
+      
+        <h5 class="card-title">${element.name}</h5>
+        <p class="card-text">${element.description}</p>
+     
+    </div>
+    <div class="col-lg-3 py-2 text-center px-4">
+      <h3 class="ms-3">${element.price}SAR</h3>
+      <p class="text-success ms-3">${element.status}</p>
+      <form>
+        <button type="button" class="btn btn-secondary w-100 my-1 bg-purple">Details</button>
+        <button type="button" class="btn btn-secondary w-100 bg-pink">Delete</button>
       </form>
     </div>
   </div>

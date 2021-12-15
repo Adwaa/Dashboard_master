@@ -69,13 +69,16 @@ let myChartt = new Chart(citiesChart, {
             borderWidth:1,
             borderColor: 'rgb(75, 192, 192)',
             //hoverBorderWidth: 5,
-            radius: '60%',
+            //radius: '50%',
             hoverBorderColor: '#000',
             tension: 0.1,
             
           }]
     }, 
-    options : {}
+    options : {
+      maintainAspectRatio: false,
+      //responsive: true,
+    }
 });
 
 
@@ -95,4 +98,5 @@ let myLinearChart = new Chart(ratChart, {
         }]
   }, 
   options : {}
+  
 });

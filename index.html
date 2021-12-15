@@ -26,206 +26,218 @@
   <!-- Navbar Brand-->
   <nav class="navbar navbar-dark bg-purple">
       <div class="container-fluid">
-                <a href="index.html">Nrt Solution</a>
+        
+        
+                <a href="index.html" class= "navbar-brand">Nrt Solution</a>
 
   <!-- Sidebar Toggle Icon-->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-              data-bs-target="#navbarToggleExternalContent" 
-              aria-controls="navbarToggleExternalContent" 
-              aria-expanded="false" aria-label="Toggle navigation"
-              style="height: 100%;">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+  <button class="navbar-toggler"
+          type="button" 
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample">
+    <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample"></span>
+  </button>
     
   <!-- Navbar Search-->
-        <form class="d-flex justify-content-sm-end">
-        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success bg-pink" type="submit">
-        <i class="fas fa-search"></i>
-        </button>
-        </form>
+  
+        <form class="d-flex ms-auto">
+       <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary bg-pink" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+  </div>
+  </form>
 
   <!-- User Profile-->
-              <a class="nav-link text-white dropdown-toggle  me-2" href="#" id="navbarDropdown"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fas fa-user"></i>
-              </a>
-      </div>
-  </nav>
+  <a class="nav-link text-white dropdown-toggle  " href="#" id="navbarDropdown"
+  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <i class="fas fa-user"></i>
+  </a>
+</div>
+</nav>
 
-  <!-- Sidebar -->
-          <div class="collapse" id="navbarToggleExternalContent">
-              <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark bg-purple"
-               style="width: 200px; height: 100%;">
-                <ul class="nav nav-pills flex-column mb-auto">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link text-white" aria-current="page">
-                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-                      <i class="fas fa-home"></i>
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-                      <i class="fas fa-tshirt"></i>
-                      Products
-                    </a>
-                  </li>
+<!-- Sidebar -->
 
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-                      <i class="fas fa-border-all"></i>
-                      Orders
-                    </a>
-                  </li>
-                  
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                      <i class="far fa-chart-bar"></i>
-                      Reports
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                      <i class="fas fa-users"></i>
-                      Customers
-                    </a>
-                  </li>
-                </ul>
-                <hr>
+<div class="offcanvas offcanvas-start bg-purple text-white mt-5" style="width: 200px; height: 100%;" tabindex="-1"
+ id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+   
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white"  aria-current="page">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="products.html" class="nav-link text-white">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+            <i class="fas fa-tshirt"></i>
+            Products
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+            <i class="fas fa-border-all"></i>
+            Orders
+          </a>
+        </li>
+        
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+            <i class="far fa-chart-bar"></i>
+            Reports
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            <i class="fas fa-users"></i>
+            Customers
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <hr>
                 <div >
                   <a href="#" class="d-flex align-items-center text-white">
                     <strong>logged in as  nrt admin</strong>
                   </a>
                 </div>
-              </div>
-              
-          </div>
-          
-    
-    
-    
+  </div>
+</div>
+
+
         <!-- The Main Content -->
+         <!-- Reports Cards -->
+      <main >
 <div class= "container-fluid"><h1>Dashboard</h1>
+  <p>Dashboard</p>
     <div class="row">
-        <div class="col mt-3">
-            <div class="card bg-pink">
-                
-                  <div class="card-body justify-content-center" >
+
+        <div class="col ">
+            <div class="card bg-pink justify-content-center">
+                  <div class="card-body">
                     <h4 class="card-title">Sales</h4>
                     <h4 class="card-title">3450.00SAR</h4>
                   </div>
-               <div class="card-footer"><a href="#" class="text-white">View Details <i class="fas fa-chevron-right"></i></div>
-              </a>
+            <div class="card-footer d-flex justify-content-between ">
+            <a href="#" class="text-white">View Details  </a>
+            <i class="fas fa-chevron-right"></i>
+            </div>
             </div>
         </div>
-        <div class="col mt-3">
+
+        <div class="col ">
             <div class="card bg-pink">
-                
                   <div class="card-body justify-content-center" >
                     <h4 class="card-title">Orders</h4>
                     <h4 class="card-title">1890</h4>
                   </div>
-                  <div class="card-footer"><a href="#" class="text-white">View Details <i class="fas fa-chevron-right"></i></div>
-                  </a>
+                  <div class="card-footer d-flex justify-content-between ">
+                    <a href="#" class="text-white">View Details  </a>
+                      <i class="fas fa-chevron-right"></i>
+                     </div>
             </div>
-        </div> <div class="col mt-3">
+        </div> 
+        
+        <div class="col">
             <div class="card bg-pink">
-                
                   <div class="card-body">
                     <h4 class="card-title">Visitors</h4>
                     <h4 class="card-title">352</h4>
                   </div>
-                  <div class="card-footer"><a href="#" class="text-white">View Details <i class="fas fa-chevron-right justify-content-end"></i></div>
-                  </a>
+                  <div class="card-footer d-flex justify-content-between ">
+                    <a href="#" class="text-white">View Details  </a>
+                      <i class="fas fa-chevron-right"></i>
+                     </div>
             </div>
-        </div> <div class="col mt-3">
+        </div> 
+        
+        <div class="col">
             <div class="card bg-pink">
-                
                   <div class="card-body justify-content-center" >
                     <h4 class="card-title">Conversion Rate</h4>
                     <h4 class="card-title">3.75%</h4>
                   </div>
-                  <div class="card-footer"><a href="#" class="text-white">View Details <i class="fas fa-chevron-right"></i></div>
-                  </a>
+                  <div class="card-footer d-flex justify-content-between ">
+                    <a href="#" class="text-white">View Details  </a>
+                      <i class="fas fa-chevron-right"></i>
+                     </div>
             </div>
         </div>
     </div>
-  
- 
-  
-
-        <div>
+    
             
-            <main>
-                <!-- Reports Cards -->
+            
+               
                 <!-- Reports Chart -->
 
-                <div class="row align-items-center mt-3">
-                    <div class="col">
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-header"><i class="fas fa-border-all"></i>
-                                  Orders
-                                </div>
-                                <div class="card-body">
-                                  <canvas id="myAreaChart"></canvas>
-              
-                  
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="col">
+  <div class="row align-items-center mt-3">
+
+          <div class="col mt-3">
+              <div class="card">
+              <div class="card-header">
+              <i class="fas fa-border-all"></i>
+               Orders
+              </div>
+              <div class="card-body">
+              <canvas id="myAreaChart"></canvas>
+            </div>
+           </div>
+          </div>           
+          
+
+                    <div class="col mt-3"> 
                             <div class="card">
                                 <div class="card-header"><i class="fas fa-eye"></i>
                                   Visitor
                                 </div>
                                 <div class="card-body">
                                   <canvas id="myBarChart"></canvas>
-                                 
                                 </div>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center mt-3">
-                    <div class="col">
-                        <div class="col">
+                            </div>
+                     </div>
+   </div>
+
+<div class="row align-items-center mt-3">
+                    <div class="col ">
                             <div class="card">
-                                <div class="card-header"><i class="fas fa-map-marker"></i>
+                                <div class="card-header">
+                                  <i class="fas fa-map-marker"></i>
                                   Visitors Cities
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" style="height: 50vh;">
                                   <canvas id="myPieChart"></canvas>
-                                  
-                          
                                 </div>
                               </div>
                         </div>
-                    </div>
+                    
                     <div class="col">
-                        <div class="col">
                             <div class="card">
-                                <div class="card-header"><i class="fas fa-star"></i>
+                                <div class="card-header">
+                                  <i class="fas fa-star"></i>
                                  Customers Rat
                                 </div>
                                 <div class="card-body">
                                   <canvas id="myLinearChart"></canvas>
-                                  
                                 </div>
                               </div>
                         </div>
-                    </div>
-                </div>
+</div>
+
+ <!-- Customers Table -->
                 <div class="row align-items-center mt-3">
                     <div class="col">
-                        <div class="col">
+                        
                             <div class="card">
                                 <div class="card-header"><i class="fas fa-users"></i>
                                   Customers
@@ -246,17 +258,19 @@
                                   </thead>
                                   </table>
                                 </div>
+                             
                               </div>
                         </div>
                     </div>
-                </div>
+                
                     
-              </main>
+              
             </div>   
-                <!-- Customers Table -->
+          </main>
+               
             
 
-            <!-- Customers Table -->
+            
             <footer >
                 <div class="footer bg-light mt-3 p-3">
                   Copyright @nrt.sa 2021
